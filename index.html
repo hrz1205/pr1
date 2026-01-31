@@ -16,7 +16,8 @@
       .boxes {
         display: flex;
         color: white;
-        flex-direction: space-evenly;
+        flex-direction: row;
+        justify-content: space-evenly;
         padding: 15px 100px;
         border: 2px solid black;
         margin: 15px;
@@ -37,7 +38,7 @@
         padding: 5px 36px;
         border: 2px solid gray;
       }
-      .box1 {
+      .box3 {
         color: black;
         align-items: center;
         justify-content: center;
@@ -55,7 +56,7 @@
     <img src="data:image/png;base64,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">
   </div>
   <br><h2><strong>이</strong></h2>
-  <h3>간단한 자기소개></h3><br><hr>
+  <h3>간단한 자기소개</h3><br><hr>
   <div class="boxes">
     <div class="box1">
       <a href="github.com/hrz1205" style="color: white;">깃허브 링크</a>
